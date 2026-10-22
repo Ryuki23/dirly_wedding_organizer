@@ -1,0 +1,39 @@
+# Dirly Wedding Organizer
+
+Aplikasi katalog dan pemesanan jasa wedding organizer berbasis **Flutter**. Pelanggan dapat melihat paket pernikahan, menyesuaikan paket, memesan lewat WhatsApp, dan membayar dengan Midtrans. Pemilik usaha mengelola semuanya dari dashboard admin di dalam aplikasi.
+
+Data utama disimpan secara lokal (SQLite dan `shared_preferences`), jadi aplikasi bisa dijalankan tanpa backend. Backend hanya dibutuhkan untuk fitur pembayaran Midtrans.
+
+## Fitur
+
+**Untuk pelanggan**
+- Katalog paket pernikahan dengan pencarian dan filter
+- Detail paket: fasilitas, harga, dan galeri
+- Kustomisasi paket dan ringkasan harga
+- Form pemesanan yang terisi otomatis dari paket yang dipilih, lalu terkirim ke WhatsApp
+- Pembayaran Midtrans Snap, dengan layar simulasi pembayaran dan QRIS untuk demo
+- Portofolio, promo, testimoni, FAQ, dan kontak
+- Tombol WhatsApp mengambang untuk konsultasi cepat
+
+**Untuk admin**
+- Login admin (password dapat diganti dari menu Pengaturan)
+- Dashboard dengan statistik, grafik booking mingguan, dan distribusi status pesanan
+- Kelola booking dan detailnya
+- Kelola paket dan galeri, termasuk upload gambar dari perangkat
+- Kelola ulasan
+- Pengaturan informasi usaha
+
+## Teknologi
+
+| Bagian | Yang dipakai |
+|---|---|
+| Framework | Flutter (SDK Dart >=3.3.0 <4.0.0) |
+| State management | Provider |
+| Penyimpanan lokal | sqflite (dengan `sqflite_common_ffi_web` untuk web), shared_preferences |
+| Tampilan | google_fonts, carousel_slider, smooth_page_indicator, flutter_staggered_grid_view, animations, fl_chart |
+| Pembayaran | Midtrans Snap lewat `http` dan `webview_flutter` |
+| Lainnya | url_launcher (WhatsApp), qr_flutter, image_picker, path_provider, intl |
+
+## Menjalankan aplikasi
+
+Prasyarat: [Flutter SDK](https://docs.flutter.dev/get-started/install) sudah terpasang.
