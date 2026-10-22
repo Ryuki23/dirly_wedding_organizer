@@ -1,0 +1,111 @@
+name: dirly_wedding_organizer
+description: "Dirly Decoration"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  provider: ^6.1.2
+
+  # Typography
+  google_fonts: ^6.2.1
+
+  # Formatting
+  intl: ^0.19.0
+
+  # Layout
+  flutter_staggered_grid_view: ^0.7.0
+
+  # Carousel
+  carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.1.0
+
+  # Animations
+  animations: ^2.0.11
+
+  # Offline Storage
+  shared_preferences: ^2.2.3
+  sqflite: ^2.3.3
+  # Web (Chrome/Edge) support for sqflite — runs the same SQLite schema on
+  # IndexedDB so the web demo no longer hangs on "loading". No effect on
+  # Android, which keeps using native sqflite.
+  # NOTE: after adding this, run once:  dart run sqflite_common_ffi_web:setup
+  sqflite_common_ffi_web: ^0.4.5+1
+  path: ^1.9.0
+
+  # WhatsApp
+  url_launcher: ^6.3.0
+
+  # In-app Payment (Midtrans Snap)
+  http: ^1.2.2
+  webview_flutter: ^4.9.0
+
+  # QR code rendering (demo QRIS screen)
+  qr_flutter: ^4.1.0
+
+  # Admin Dashboard — upload gambar lokal (Kelola Paket & Kelola Galeri)
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+  fl_chart: ^0.69.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
+
+# ================================
+# Launcher Icon Configuration
+# ================================
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/images/logo/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/packages/
+    - assets/images/portfolio/
+    - assets/images/promo/
+    - assets/images/misc/
+    - assets/images/logo/
+
+  fonts:
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlayfairDisplay-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
+          weight: 700
+
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700

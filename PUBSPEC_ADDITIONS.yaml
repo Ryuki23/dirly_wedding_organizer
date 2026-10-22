@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------------
+# Tambahkan blok di bawah ini ke `dependencies:` pada pubspec.yaml Anda
+# yang sudah ada. Package lain (provider, sqflite, url_launcher, intl,
+# google_fonts, dll) TIDAK berubah — cukup 2 dependency baru ini.
+# ---------------------------------------------------------------------
+
+dependencies:
+  # ... dependency Anda yang sudah ada tetap di sini ...
+
+  # Memanggil backend (create-transaction & status check)
+  http: ^1.2.2
+
+  # Menampilkan halaman Midtrans Snap di dalam aplikasi
+  webview_flutter: ^4.9.0
+
+  # Menampilkan QR code untuk demo pembayaran QRIS
+  qr_flutter: ^4.1.0
+
+# Tidak ada perubahan pada bagian `flutter:` / `assets:` — fitur ini tidak
+# menambah asset gambar/font baru.
